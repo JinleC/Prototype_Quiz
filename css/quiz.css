@@ -1,0 +1,150 @@
+body {
+    color: #fff;
+    font-size: 1.2rem; /* Slightly increased font size */
+}
+
+.goback {
+    position: absolute;
+    background: rgba(23, 21, 21, 0.279);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 14px 28px; /* Increased padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Increased font size */
+    margin: 6px 3px; /* Increased margin */
+    cursor: pointer;
+    margin-top: -3rem; /* Adjusted for larger size */
+    margin-left: 3rem;
+    transition: 0.4s;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.goback:hover {
+    padding: 16px 30px; /* Slightly larger hover effect */
+}
+
+.choice-container, .choice-container2, .choice-container3 {
+    display: flex;
+    margin-bottom: 1.5rem; /* Increased margin */
+    margin-left: 7rem; /* Increased margin */
+    width: 7%; /* Increased width */
+    border-radius: 4px;
+    font-size: 2.8rem; /* Increased font size */
+    min-width: 50rem; /* Increased min-width */
+}
+
+.choice-container {
+    background: linear-gradient(90deg, rgb(230, 112, 112) 0%, rgb(240, 166, 154) 46%, rgb(243, 197, 179) 100%);
+}
+
+.choice-container2 {
+    background: linear-gradient(90deg, rgb(190, 112, 241) 0%, rgb(178, 106, 237) 46%, rgba(234,182,237,1) 100%);
+}
+
+.choice-container3 {
+    background: linear-gradient(90deg, rgb(86, 85, 86) 0%, rgb(132, 125, 138) 46%, rgb(225, 216, 225) 100%);
+}
+
+#container {
+    margin-top: 70px; /* Increased margin */
+}
+
+#question {
+    margin-left: 100px; /* Increased margin */
+    font-size: 28px; /* Increased font size */
+}
+
+.choice-container:hover, .choice-container2:hover, .choice-container3:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.2rem 0 rgba(110, 110, 184, 0.576);
+    transform: scale(1.03); /* Slightly larger hover effect */
+    transition: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2rem; /* Increased padding */
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem; /* Increased padding */
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(32deg, green, rgb(30, 206, 30)) 100%;
+}
+
+.incorrect {
+    background: linear-gradient(32deg, red, rgb(201, 24, 24)) 100%;
+}
+
+/* heads up display */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    font-size: 2rem; /* Increased font size */
+    margin-top: 7rem; /* Increased margin */
+    margin-left: 175px; /* Increased margin */
+    text-align: center;
+}
+
+.hud-prefix2 {
+    font-size: 2rem; /* Increased font size */
+    margin-top: 8rem; /* Increased margin */
+    margin-right: 70px; /* Increased margin */
+    text-align: center;
+}
+
+.hud-main-text {
+    text-align: center;
+    margin-right: 70px; /* Increased margin */
+}
+
+#progressBar {
+    width: 95rem; /* Increased width */
+    height: 2.5rem; /* Increased height */
+    border: 0.2rem solid rgb(253, 252, 252); /* Adjusted border size */
+    margin-top: 2.5rem; /* Increased margin */
+    margin-left: 175px; /* Increased margin */
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgba(255, 254, 254, 0.944);
+    width: 0%;
+    transition: 0.75s;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 30rem; /* Increased for smaller screens */
+    }
+}
+
+.image {
+    margin-left: 650px; /* Increased margin */
+    margin-top: -275px; /* Increased margin */
+}
+
+img {
+    transition: 0.4s;
+    border: solid 2px; /* Increased border size */
+    border-radius: 5px; /* Increased border-radius */
+}
+
+img:hover {
+    opacity: 85%;
+}
